@@ -11,7 +11,13 @@
   <body class="container">
 
     <div style="display:none">
-     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="SVG-facebook" viewBox="0 0 20 20">
+     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="SVG-arrow-left" viewBox="0 0 9 14">
+<path d="M7.65685 1.34314L2 6.99999L7.65685 12.6568" stroke="#373737" stroke-width="2"></path>
+</symbol><symbol id="SVG-arrow-right" viewBox="0 0 9 14">
+<path d="M1.34314 1.34314L6.99999 6.99999L1.34314 12.6568" stroke="#373737" stroke-width="2"></path>
+</symbol><symbol id="SVG-divider-icon" viewBox="0 0 7 14">
+<path d="M1.67871 13.8955H0L5.03613 0H6.71484L1.67871 13.8955Z" fill="#373737"></path>
+</symbol><symbol id="SVG-facebook" viewBox="0 0 20 20">
 <path d="M8.6955 6.937V8.314H7.6875V9.997H8.6955V15H10.7675V9.997H12.1575C12.1575 9.997 12.2885 9.19 12.3515 8.307H10.7755V7.157C10.7755 6.984 11.0015 6.753 11.2255 6.753H12.3535V5H10.8185C8.6445 5 8.6955 6.685 8.6955 6.937Z" fill="white"></path>
 <circle cx="10" cy="10" r="9.35" style="fill:none; stroke-width:1.3; stroke:white;"></circle>
 </symbol><symbol id="SVG-insta" viewBox="0 0 20 20">
@@ -38,6 +44,7 @@
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">
+              <p class="visually-hidden">Logo</p>
               <svg class="main-nav__link-logo" width="44" height="45">
                 <use xlink:href="#SVG-main_logo"></use>
               </svg>
@@ -118,6 +125,38 @@
         </div>
         <div class="rappresent__column">
           <img src="assets/rappresent-image-1.png" alt="rappresent" width="407" height="582">
+        </div>
+      </section>
+
+      <section class="our-community">
+        <div class="our-community__left-column">
+          <img src="assets/userpic.svg" alt="User logo" class="our-community__user-icon" width="45" height="45">
+          <h2 class="our-community__title">our community</h2>
+          <p class="our-community__text-content">A hacker is any skilled computer expert that uses their
+            technical knowledge to overcome a problem, but it can also mean
+            a security hacker in common language</p>
+        </div>
+        <div class="our-community__right-column">
+          <div class="our-community__control-element control-slider">
+            <button class="control-slider__arrow">
+              <svg class="control-slider__arrow-icon" width="9" height="14">
+                <use xlink:href="#SVG-arrow-left"></use>
+              </svg>
+            </button>
+            <span class="control-slider__current-slide control-slider__text">1</span>
+            <span class="control-slider__text">/</span>
+            <span class="control-slider__all-slides control-slider__text">5</span>
+            <button class="control-slider__arrow">
+              <svg class="control-slider__arrow-icon" width="9" height="14">
+                <use xlink:href="#SVG-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="our-community__slider slider">
+            <img src="assets/slider-item-1.png" width="407" height="244" alt="slide one" class="slider__item">
+            <img src="assets/slider-item-2.png" width="407" height="244" alt="slide two" class="slider__item">
+            <img src="assets/slider-item-3.png" width="407" height="244" alt="slide three" class="slider__item">
+          </div>
         </div>
       </section>
 
