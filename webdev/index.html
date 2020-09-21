@@ -11,7 +11,15 @@
   <body class="container">
 
     <div style="display:none">
-     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="SVG-facebook" viewBox="0 0 20 20">
+     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="SVG-arrow-left" viewBox="0 0 9 14">
+<path d="M7.65685 1.34314L2 6.99999L7.65685 12.6568" stroke="#373737" stroke-width="2"></path>
+</symbol><symbol id="SVG-arrow-right" viewBox="0 0 9 14">
+<path d="M1.34314 1.34314L6.99999 6.99999L1.34314 12.6568" stroke="#373737" stroke-width="2"></path>
+</symbol><symbol id="SVG-btn-submit" viewBox="0 0 17 14">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5248 2.58121C16.5248 2.30311 16.4182 2.02485 16.2263 1.82464L14.7764 0.31155C14.5845 0.111175 14.3179 0 14.0514 0C13.7849 0 13.5183 0.111175 13.3264 0.31155L6.33274 7.62146L3.19835 4.33912C3.00645 4.13891 2.73991 4.02757 2.47338 4.02757C2.20683 4.02757 1.9403 4.13891 1.7484 4.33912L0.29849 5.8524C0.106571 6.05261 0 6.33068 0 6.60896C0 6.88704 0.106571 7.16513 0.29849 7.36551L5.60776 12.9064C5.79967 13.1066 6.06621 13.2179 6.33274 13.2179C6.59927 13.2179 6.86575 13.1066 7.05764 12.9064L16.2263 3.33775C16.4182 3.13756 16.5248 2.85947 16.5248 2.58121Z" fill="white"></path>
+</symbol><symbol id="SVG-divider-icon" viewBox="0 0 7 14">
+<path d="M1.67871 13.8955H0L5.03613 0H6.71484L1.67871 13.8955Z" fill="#373737"></path>
+</symbol><symbol id="SVG-facebook" viewBox="0 0 20 20">
 <path d="M8.6955 6.937V8.314H7.6875V9.997H8.6955V15H10.7675V9.997H12.1575C12.1575 9.997 12.2885 9.19 12.3515 8.307H10.7755V7.157C10.7755 6.984 11.0015 6.753 11.2255 6.753H12.3535V5H10.8185C8.6445 5 8.6955 6.685 8.6955 6.937Z" fill="white"></path>
 <circle cx="10" cy="10" r="9.35" style="fill:none; stroke-width:1.3; stroke:white;"></circle>
 </symbol><symbol id="SVG-insta" viewBox="0 0 20 20">
@@ -37,7 +45,8 @@
             <a href="#" class="main-nav__link">Syllabus</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="">
+            <a href="#">
+              <p class="visually-hidden">Logo</p>
               <svg class="main-nav__link-logo" width="44" height="45">
                 <use xlink:href="#SVG-main_logo"></use>
               </svg>
@@ -54,41 +63,41 @@
     </header>
 
     <main>
-      <section class="introduction">
-        <h2 class="introduction__title">
+      <section class="your-life">
+        <h2 class="your-life__title">
           your life is WebDev
         </h2>
-        <p class="introduction__text-content">
+        <p class="your-life__text-content">
           Whatever the approach to development may be, the final program must satisfy some fundamental properties
         </p>
-        <a href="#" class="button introduction__button">
+        <a href="#" class="button your-life__button">
           get started
         </a>
-        <ul class="introduction__social-list">
+        <ul class="your-life__social-list">
           <li>
             <a href="#">
-              <svg class="introduction__social-logo" width="20" height="20">
+              <svg class="your-life__social-logo" width="20" height="20">
                 <use xlink:href="#SVG-mail"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <svg class="introduction__social-logo" width="20" height="20">
+              <svg class="your-life__social-logo" width="20" height="20">
                 <use xlink:href="#SVG-facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <svg class="introduction__social-logo" width="20" height="20">
+              <svg class="your-life__social-logo" width="20" height="20">
                 <use xlink:href="#SVG-insta"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <svg class="introduction__social-logo" width="20" height="20">
+              <svg class="your-life__social-logo" width="20" height="20">
                 <use xlink:href="#SVG-telegram"></use>
               </svg>
             </a>
@@ -99,14 +108,145 @@
 
       </section>
 
+      <section class="rappresent">
+        <div class="rappresent__column rappresent__column--left">
+          <h2 class="rappresent__title">
+            Rappresent your idea with<br>
+            a smart Design
+          </h2>
+          <p class="rappresent__text-content">
+            Tasks accompanying and related to programming include:
+            testing, debugging, source code maintenance,
+            <strong>implementation of build systems,</strong>
+            and management of derived artifacts,
+            such as the machine code of computer programs.
+          </p>
+          <a href="#" class="button rappresent__button">
+            get started
+          </a>
+        </div>
+        <div class="rappresent__column">
+          <img src="assets/rappresent-image-1.png" alt="rappresent" width="407" height="582">
+        </div>
+      </section>
+
+      <section class="our-community">
+        <div class="our-community__left-column">
+          <img src="assets/userpic.svg" alt="User logo" class="our-community__user-icon" width="45" height="45">
+          <h2 class="our-community__title">our community</h2>
+          <p class="our-community__text-content">A hacker is any skilled computer expert that uses their
+            technical knowledge to overcome a problem, but it can also mean
+            a security hacker in common language</p>
+        </div>
+        <div class="our-community__right-column">
+          <div class="our-community__control-element control-slider">
+            <button class="control-slider__arrow">
+              <svg class="control-slider__arrow-icon" width="9" height="14">
+                <use xlink:href="#SVG-arrow-left"></use>
+              </svg>
+            </button>
+            <span class="control-slider__current-slide control-slider__text">1</span>
+            <span class="control-slider__text">/</span>
+            <span class="control-slider__all-slides control-slider__text">5</span>
+            <button class="control-slider__arrow">
+              <svg class="control-slider__arrow-icon" width="9" height="14">
+                <use xlink:href="#SVG-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="our-community__slider slider">
+            <img src="assets/slider-item-1.png" width="407" height="244" alt="slide one" class="slider__item">
+            <img src="assets/slider-item-2.png" width="407" height="244" alt="slide two" class="slider__item">
+            <img src="assets/slider-item-3.png" width="407" height="244" alt="slide three" class="slider__item">
+          </div>
+        </div>
+      </section>
+
+      <section class="implement">
+        <img src="assets/implement-image.png" width="407" height="582" alt="implement-image" class="implement__image">
+        <div class="implement__content">
+          <h2 class="implement__title">
+            Implement right Code
+          </h2>
+          <p class="implement__text-content">
+            These might be considered part of the
+            <strong>programming process,</strong>
+            but often the term software development is
+            used for this larger process with the term programming,
+            implementation
+          </p>
+          <a href="#" class="button implement__button">
+            Learn more
+          </a>
+        </div>
+
+      </section>
+
+      <section class="sign-up">
+        <p class="sign-up__subscribe ">
+          sign up for our newsletter
+        </p>
+        <form action="#" class="sign-up__form">
+          <input type="email" name="login" placeholder="E-mail" class="sign-up__email">
+          <button type="submit" class="button sign-up__button">
+            <svg class="sign-up__btn-submit" width="16" height="13">
+              <use xlink:href="#SVG-btn-submit"></use>
+            </svg>
+          </button>
+        </form>
+
+      </section>
+
+      <section class="download">
+        <h2 class="download__title">
+          Download the App
+        </h2>
+        <p class="download__text-content">
+          Machine code was the language of early programs,
+          written in the instruction set of the particular machine,
+          often in binary notation.
+        </p>
+        <div class="download__link-wrapper">
+          <a href="#" class="download__apple-store download__button button">
+            apple store
+          </a>
+          <a href="#" class="download__play-market download__button button">
+            Play Market
+          </a>
+        </div>
+      </section>
+
     </main>
 
-    <footer class="page-footer">
-      <h2 class="page-footer__tittle">
-        <a href="#" class="page-footer__tittle-link">
-          <span class="visually-hidden">Webdew</span>
-        </a>
-      </h2>
+    <footer class="footer-page">
+      <nav class="footer-page__additional-menu">
+        <ul class="footer-page__list">
+          <li class="footer-page__nav-item">
+            <a href="#" class="footer-page__nav-link">
+              Credits
+            </a>
+          </li>
+          <li class="footer-page__nav-item">
+            <a href="#" class="footer-page__nav-link">
+              Privacy
+            </a>
+          </li>
+          <li class="footer-page__nav-item">
+            <a href="#" class="footer-page__nav-link">
+              Our teams
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="footer-page__logo">
+        <p class="visually-hidden">Logo</p>
+        <svg class="footer-page__link-logo" width="44" height="45">
+          <use xlink:href="#SVG-main_logo"></use>
+        </svg>
+      </a>
+      <p class="footer-page__copyright">
+        by TonYem for RSS at 2020
+      </p>
     </footer>
   </body>
 </html>
