@@ -90,7 +90,7 @@ class Calculator {
         return;
     }
     this.readyToReset = true;
-    this.currentOperand = computation;
+    this.currentOperand = this._rounding(computation);
     this.operation = undefined;
     this.previousOperand = ``;
   }
@@ -136,6 +136,11 @@ class Calculator {
         alert(`Something went wrong`);
         return;
     }
+  }
+
+  _rounding(num) {
+    const accuracy = 10000
+    return Math.round(num * accuracy)/accuracy
   }
 }
 
