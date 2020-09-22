@@ -32,6 +32,19 @@ class Calculator {
       return;
     }
 
+    if (operation === `√`) {
+      if (this.currentOperand < 0) {
+        this._giveError(`negative`);
+        return;
+      }
+      this.operation = `^`;
+      this.previousOperand = this.currentOperand;
+      this.currentOperand = 0.5;
+      this.compute();
+      this.updateDisplay();
+      return;
+    }
+
     if (this.previousOperand !== ``) {
       this.compute();
     }
@@ -59,7 +72,14 @@ class Calculator {
         computation = prev * current;
         break;
       case `÷`:
+        if (current === 0) {
+          this._giveError(`divisionByZero`)
+          return;
+        }
         computation = prev / current;
+        break;
+      case `^`:
+        computation = prev ** current;
         break;
       default:
         return;
@@ -95,6 +115,21 @@ class Calculator {
         `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
     } else {
       this.previousOperandTextElement.innerText = ``;
+    }
+  }
+
+  _giveError(typeError) {
+    this.clear();
+    switch (typeError) {
+      case `divisionByZero`:
+        alert(`You cannot divide by zero`);
+        break;
+      case `negative`:
+        alert(`Can't square root a negative number`);
+        break;
+      default:
+        alert(`Something went wrong`);
+        return;
     }
   }
 }
