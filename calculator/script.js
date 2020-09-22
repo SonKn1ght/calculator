@@ -45,6 +45,11 @@ class Calculator {
       return;
     }
 
+    if (operation === `±`) {
+      this.currentOperand = -1 * this.currentOperand;
+      return;
+    }
+
     if (this.previousOperand !== ``) {
       this.compute();
     }
