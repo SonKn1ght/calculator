@@ -10,6 +10,7 @@ class Calculator {
     this.currentOperand = ``;
     this.previousOperand = ``;
     this.operation = undefined;
+    this.readyToReset = false;
   }
 
   delete() {
@@ -115,7 +116,7 @@ class Calculator {
 
   updateDisplay() {
     this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand);
-    if (this.operation !== undefined) {
+    if (this.operation != null) {
       this.previousOperandTextElement.innerText =
         `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
     } else {
